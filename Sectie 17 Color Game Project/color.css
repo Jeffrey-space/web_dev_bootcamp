@@ -1,0 +1,38 @@
+body {
+	background: rgb(55, 62, 64);
+	margin: 0;
+	font-family: arial;
+}
+
+.header {
+	background: rgb(57, 147, 221);
+	color: rgb(255, 255, 255);
+    height: 23vh;
+    position: absolute;
+    text-align: center;
+	width: 100%;
+}
+
+.menu {
+	background: rgb(255, 255, 255);
+	height: 5vh;
+	width: 100%;
+}
+
+.menu-items {
+	align-self: center;
+	color: rgb(57, 147, 221);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 1rem;
+}
+
+.push {
+	display: flex;	
+  	margin-left: 20%;
+}
+
+.push li {
+	padding-left: 11px;
+}
