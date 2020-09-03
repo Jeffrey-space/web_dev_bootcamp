@@ -1,0 +1,147 @@
+Introduction to DOM
+
+Document Object Model
+The Document Object Model is the interface between your Javascript and HTML, CSS
+
+//The selecting process
+var h1 = document.querySelector("h1");
+It returns a object that represents the h1 element
+
+//Manipulating process
+var h1 = document.querySelector("h1");
+
+h1.style.color = "pink";
+We first selected the element and then changed the property
+
+
+// *** Methods ***
+The document comes with a bunch of methods for selecting elements. We're going to learn about the following 5:
+document.getElementById()
+    Gets the matching ID, it searches for the ID in a page
+
+    var tag = document.getElementById("id");
+
+document.getElementsByClassName()
+    It will return a list of elements that have a matching class
+
+    var tag = document.getElementsByClassName("class");
+
+document.getElementsByTagName()
+    It returns elements with tags in it, names like <li> or <h1>
+
+    var body = document.getElementsByTagName("body");
+
+document.querySelector()
+    Returns the first element that matches a given CSS-style selector
+
+    var tag = document.querySelector("h1")[0]; //It will search for the first h1 and apply a style or a function.
+    var tag = document.querySelector(".bolded"); //It will search for the first class that has .bolded.
+ 	var tag = document.querySelector("#higlight"); //It will search for the first id name with #higlight.
+
+document.querySelectorAll()
+    Returns a list of elements that matches a given CSS-style selector (It searches for all elements)
+
+    var h1 = document.querySelectorAll("h1"); //It will search for all h1 and apply a style or a function.
+
+
+// *** DOM Manipulation ***
+Changing an element's style
+Adding/removing classes
+Changing the content of a tag
+Changing attributes(src, href, etc)
+
+// Style
+The style property is one way to manipulate an element's style
+
+//selecting
+var tag = document.getElementById("highlight");
+
+//manipulate
+tag.style.color = "blue";
+tag.style.border = "10px solid red";
+tag.stylefontSize = "70px";
+tag.style.background = "yellow";
+tag.style.marginTop = "2rem"
+
+/define a class in css
+.header {
+	color: blue;
+	fontSize: 16px;
+}
+
+var tag = document.getElementById("highlight");
+tag.classList.add(".header");
+
+
+var tag = document.querySelector("h1");
+
+//add a class to the selected element
+tag.classList.add("another-class");
+
+//remove a class
+tag.classList.remove("another-class");
+
+//Toggle a class
+tag.classList.toggle("another-class");
+
+//Manipulating text and content
+<p>This an awesome paragraph</p>
+
+/select the <p>
+var tag = document.querySelector("p");
+
+//retrieve the textcontent
+tag.textContent //"This is an awesome paragraph"
+
+//alter the textcontent
+tag.textContent = "Blahblahblah"
+
+//innerHTML
+Similar to textContent, except it returns a string of all the HTML contained in a given element
+
+<p>This an <strong>awesome</strong> paragraph</p>
+
+
+/select the <p>
+var tag = document.querySelector("p");
+
+tag.innerHTML
+//it will get the whole string with attributes in it
+
+tag.textContent
+//It will only get the text not the elements in it
+
+
+// *** Attributes ***
+Use getAttribute() and setAttribute() to read and write attributes like src or href
+
+<a href="www.google.com">I am a link</a>
+<img src="logo.png">
+
+var link document.querySelector("a");
+link.getAttribute("href");
+//change href attribute
+
+link.setAttribute("href", "www.dogs.com");
+//change the link to a another website/link
+
+//to change the image src
+var img = document.querySelector("img");
+img.setAttribute("src", "corgi.png");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

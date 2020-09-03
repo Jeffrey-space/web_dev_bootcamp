@@ -1,0 +1,192 @@
+//Objects
+Suppose I wantend to model a single person: name, age and city
+
+//You could use an array like this:
+var person = ["cindy", 32, "Missoula"];
+
+//to retrieve the person's hometown
+person[2]
+
+//This is a perfect use case of an OBJECT
+var person = {
+	name: "Travis",
+	age: 21,
+	city: "LA"
+};
+
+//retrieve data from a object
+
+//bracket notation, similar to arrays:
+console.log(person["name"]);
+
+//dot notation:
+console.log(person.name);
+
+//you cannot use dot notation if the property starts with a number
+someObject.1blah //invalid
+someObject["1blah"] //valid
+
+//you can lookup using a variable with bracket notation
+var str = "name";
+someObject.str //doesn't look for "name"
+someObject[str] //does evaluate str and looks for "name"
+
+//you cannot use dot notation for property names with spaces
+someObject.fav color //invalid
+someObject["fav color"]; //valid
+
+//Updating data
+Just like an array: acces a property and reassign it
+
+var person = {
+	name: "Travis",
+	age: 21,
+	city: "LA"
+};
+
+//to update age
+person["age"] += 1;
+//to update city
+person.city = "london";
+
+//creating objects
+Like arrays, there are a few methods of initializing objects
+
+//make an empty object and then add to it
+var person = {}
+person.name = "str";
+person.age = num;
+person.city = "str";
+
+//all at once
+var person = {
+	name: "str",
+	age: 21;,
+	city: "LA"
+}
+
+//another way of initializing an object
+var person = new object();
+person.name = "str";
+person.age = 21;
+person.city = "str";
+
+//objects
+Objects can hold all sorts of data
+
+var junkObject = {
+	age: 57,
+	color: "purple",
+	isHungry: true,
+	friends: ["horatio", "hamlet"],
+	pet: {
+		name:"Rusty",
+		species: "Dog",
+		age: 2
+	}
+};
+
+//Comparing arrays and objects
+Array - storing a list of data
+Object - isn't a list
+
+// *** array ***
+var dogs = ["rusty", "Lucky"];
+
+//getting data from array
+dogs[1];
+
+//new data
+dogs.push("Wyatt")
+
+//changing a array
+dogs[1] = "Lucy"
+
+// *** object ***
+var dog = {
+	name: "Bubba",
+	breed: "Lab"
+}
+
+//getting data from object
+dog["name"]
+dog.name
+
+//new data
+dog.age = 6;
+
+//changing an object
+dog.breed = "Black Lab"
+
+// *** nested objects and arrays ***
+// *** Arrays/object ***
+
+var posts = [
+	{
+		title: "Cats are mediocre",
+		author: "Colt",
+		comments: ["Awesome posts", "Terrible post"]	
+	},
+	{
+		title: "cats are actually awesome",
+		author: "cat luvr",
+		comments: ["<3", "go to hell I hate you"]
+	}
+]
+
+
+//Movie database example
+var movies = [
+	{
+		title: "In Brudges",
+		hasWatched: true,
+		rating: 5	
+	},
+	{	
+		title: "Frozen",
+		hasWatched: true,
+		rating: 4.5
+	}, 
+	{
+		title: "Les Miserable",
+		hasWatched: false,
+		rating: 3.5
+	}
+]
+
+movies.forEach(function(movie){
+	console.log(buildString(movie));
+});
+
+function buildString(movie){
+	var result = "You have "
+	if(movie.hasWatched){
+	result += "watched ";
+	} else {
+	result += "not seen ";
+	}
+	result += "\"" + movie.title + "\" - ";
+	result += movie.rating + " stars";
+	console.log(result)
+	return result;
+}
+
+//Adding methods to objects
+var obj = {
+	name: "str",
+	age: num,
+	isCool: false,
+	friends: ["str", "str"],
+	add: function(x,y){
+		return x + y;
+	}
+}
+obj.add(10,5);
+result 15
+
+
+
+
+
+
+

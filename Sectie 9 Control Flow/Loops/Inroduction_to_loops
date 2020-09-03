@@ -1,0 +1,68 @@
+http://webdev.slides.com/coltsteele/loops-58#/
+
+// Introduction to Loops //
+DRY Code: Don't Repeat Yourself
+We want to keep out code as DRY as possible. It saves us a lot of time and makes our code cleaner.
+
+//While Loops
+Repeat code WHILE a condition is true
+
+//Printing numbers from 1-5
+const count = 1;
+
+while(count < 6) {
+	console.log("count is: " + count);
+	count++;
+}
+
+//Printing each character in a string
+//string we're looping over:
+const str = "hello";
+//first character is a index 0
+const count = 0;
+
+while(count < str.length) {
+	console.log(str[count]);
+	count++;
+}
+
+//Infinite Loops
+Infinite loops occur when the terminating
+condition in a loop is never true
+
+example
+const count = 0;
+
+while(count < 10) {
+	console.log(count);
+}
+
+
+// Intro to For Loops //
+While vs For loops
+
+//Printing numbers from 1-5 with a for loop
+//Another way for repeating code
+for(var count = 1; count < 6; count++) {
+	console.log(count);
+}
+
+//Printing numbers from 1-5 with a for loop
+var count = 0;
+
+while(count < 6) {
+	console.log("count is: " + count);
+	count++;
+}
+
+
+
+
+
+
+
+
+
+
+
+

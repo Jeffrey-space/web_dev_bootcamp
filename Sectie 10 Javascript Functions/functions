@@ -1,0 +1,35 @@
+//Functions descriptions
+Functions lets us store lines of code, like a variable but reusable. You dont have to write lots of code (DRY = Don't Repeat Yourself).
+
+//Arguments are placed in () after declerating a function.
+example
+function square(num) {
+	console.log(num * num);
+}
+
+square(10); //prints 100
+
+//Return keyword
+example for printing out a string and the selected number.
+function square(num) {
+	return ("This number is " + num);
+}
+
+//Intro to scope
+Scope is the context that code is executed in
+
+//Higher order functions code along, you can pass a argument to a other function.
+function sing() {
+	console.log("twinkle twinkle");
+	console.log("how i wonder");
+}
+
+setInterval(sing, 1000);
+
+setInterval(function() {
+	console.log("What cool");
+	console.log("This is awesome");
+}, 2000);
+
+
+

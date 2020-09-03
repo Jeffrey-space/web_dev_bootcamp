@@ -1,0 +1,34 @@
+// conditionals
+
+Ff
+Else If
+Else
+
+// If, Else If, Else conditionals in story
+If you are younger than 19
+	you cannot enter the venue
+
+If you are between 18 and 21
+	you can enter but cannot drink
+
+Otherwise
+	you can enter and drink
+
+if (age < 18){
+	console.log("Sorry, you are not old enough to enter the venue");
+}
+
+else if (age < 21){
+	console.log("You can enter, but cannot drink");
+}
+
+else {
+	console.log("Come on in. You can drink.");
+}
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form tag</title>
+</head>
+<body>
+
+<h1>Login</h1>
+	<!--All our inputs will go in here-->
+	<!--Method - what HTTP nethod (get/post)-->
+<!-- <form>
+	<input name="usename" type="text" placeholder="username">
+	<input name="password" type="password" placeholder="password">
+	<input type="submit">
+	</form> -->
+
+<!-- Labels -->
+<!-- Validation -->
+<form action="http://wikipedia.org">
+	<label for="username">Username:</label>
+	<input id="usename" type="email" placeholder="username" required>
+	<label for="password">Password:</label>
+	<input id="password" type="password" placeholder="password" required>
+	<input type="submit">
+</form>
+
+<h3>Input vield</h3>
+<!-- radio button -->
+<!-- Select tag -->
+<!-- textarea tag -->
+
+<p>Which one?</p>
+
+<form>
+	<label for="dog">Dogs</label>
+	<input name="petCHoice" id="dogs" type="radio" value="DOGS">
+	
+	<label for="cat">Cat</label>
+	<input name="petChoice" id="cat" type="checkbox" value="CATS">
+
+<p>Your favorite color</p>
+	
+	<select name="color">
+		<option value="angry">Red</option>
+		<option value="neutral">Orange</option>
+		<option value="mildly sad">Yellow</option>
+	</select>
+
+	<textarea name="textarea" rows="2" cols="70"></textarea>
+	<button>Go!</button>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+//alert
+//prompt
+//console.log
+
+//clear() for clearing your console
+//alert("hello there"(string)) then you get a popup
+//console.log("hello from the console") it prints out in console, to ourself!
+//prompt("what is your name?") it sends to a user. You can store data in a var. Example var userName = ("What is your name?")
+

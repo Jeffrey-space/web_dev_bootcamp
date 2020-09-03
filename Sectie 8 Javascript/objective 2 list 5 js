@@ -1,0 +1,95 @@
+Primitive datatypes:
+Numbers:
+4
+9.3
+-10
+
+	//math
+	4 + 10 //14
+	1/5 //0.2
+	2*5 //10
+
+	//Modulo - remainder operator - it will take the remaining number. If you have 10 %(mod) 3 then the remaining is 1, because you van fit 3 times 3 = 9  and the remainder is 1. 
+	10 % 3 //1
+	24 % 2 //0
+	15 % 11 //4
+
+Strings are text mostly and are inside of quotes:
+"hello world"
+"43"
+
+	//single or double quotes
+	"hello world"
+	'hello world'
+	//note you can't use a single quote in a string if you have text with a single quote: 'I can't eat' it needs to be "I can't eat"
+
+	//Concatenation
+	"charlie" + "brown" //"charliebrown" but if you want it with a space you need to write it like this "charlie" + " brown"
+
+	//Escape Characters start with "\"
+	"singin" \ "Do wah diddy, diddy, dum diddy do\" "
+
+	//Strings have a length property
+	"hello world".length //11
+
+	//access individual characters using [] and an index (starts with 0)
+	"hello"[0] //"h" 
+	"hello"[4] //"o"
+
+Booleans have two options:
+true
+false
+
+Null and undefined (values):
+null
+undefined
+	//The two other primitives are null and undefined
+
+	//Variables that are declared but not 
+	//initialized are undefined
+	//The following variables are undefined:
+	var name;
+	var age;
+
+	//null is "explicitly nothing"
+	var currentPlayer = "charlie";
+	currentPlayer = null;   //game over
+
+Variables:
+	//Variables are simply containers that store values
+	//They follow this pattern:
+	var yourVariableName = yourValue;
+
+	//They can store all of the values we've seen
+	var name = "Rusty";
+	var secretNumber = 73;
+	var isAdorable = true;
+
+	//Recall the stored value by calling the variable name
+	var name = "Rusty";
+	"hello there " + name    //"hello there Rusty"
+
+	var num = 37;
+	num + 3 + 10    //50
+
+	//We can also update existing variables
+	var name = "Robert";
+	name = "Bob"; 
+
+	//There are new ways to store values
+	//prefer const over let
+	//prefer let over var
+	//USE var PRETTY MUCH NEVER
+	(you probably don't need it)
+
+	var ()
+
+	//blocked scoped
+	let ()
+	
+	//blocked scoped
+	const (the value can't be changed, has already been declared)
+
+
+
+

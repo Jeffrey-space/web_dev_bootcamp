@@ -1,0 +1,22 @@
+body {
+	background: rgb(10,60,100);
+}
+
+li {
+	border: 1px solid white;
+}
+
+/* #special a ID selector */
+/*This attribute assigns a name to an element. This name must be unique in a document.*/
+
+#special {
+	background-color: yellow;
+} 
+
+/* .completed Class selector */
+/*This attribute assigns a class name or set of class names to an element. Any number of elements may be assigned the same class 
+name or names. Multiple class names must be separated by white space characters. */
+
+.completed {
+	text-decoration: line-through;
+}

@@ -1,0 +1,185 @@
+//Javascript Arrays (storing data and information) 
+
+//Example
+Suppose I wanted to model a group of friends:
+var friend1 = "Charlie";
+var friend = "Liz";
+etc
+
+var friends = ["Charlie", "Liz", "David", "Mattias"];
+Array are indexed starting at 0. Every slot has a corresponding number
+
+You can also use indices to retrieve data
+var friends = ["Charlie", "Liz", "David", "Mattias"];
+
+console.log([0]) //"Charlie"
+
+friends[1] + " <3  " + friends[2]; //"Liz <3 David"
+
+//Example 2
+var colors = ["red", "Yellow", "Orange"]
+
+colors[0] = "Red";
+
+colors[2] = "Purple" //You change color orange to purple
+
+//Different ways do define a array
+//We van initialize an empty array two ways
+var friends = [];
+var friends = new array() //common
+
+//Arrays can hold any type of data
+var random_collection = [49, true, "Hermione", null];
+
+//arrays have length property
+var nums = [45,37,89,24];
+nums.length //4
+
+
+//Array methods
+Arrays come with a few built-in methods that make our life easier. We're going to cover:
+	push/pop
+	shift/unshift
+	indexOf
+	slice
+
+
+//Example push/pop
+Use push to add to the end of an array
+var colors = ["Red","Green","Purple","Yellow"];
+colors.push("Grey");
+//["Red","Green","Purple","Yellow","Grey"]
+
+Use pop to remove the last item in an array
+var colors = ["Red","Green","Purple","Yellow"];
+colors.pop();
+
+
+//Example shift/unshift
+Use unshift to add to the front of an array
+var colors = ["Red","Green","Purple","Yellow"];
+colors.unshift("Grey");
+//["Grey","Red","Green","Purple","Yellow"]
+
+Use shift to remove the first item in an array
+var colors = ["Grey","Red","Green","Purple","Yellow"];
+colors.shift();
+//["Red","Green","Purple","Yellow"];
+
+
+//Example indexOf
+Use indexOf() to find the index of an item in an array
+
+var friends = ["Charlie", "Liz", "David", "Mattias"];
+
+//returns the first index at which a given element can be found
+friends.indexOf("David"); //2
+friends.indexOf("Liz"); 1, not 4
+
+//returns a -1 if the element is not present.
+friends.indexOf("Hagrid"); //-1
+
+
+//Example Slice
+Use slice() to copy parts of an array
+
+var fruits = ['banana', 'orange', 'lemon'];
+//use slice to copy the 2nd and 3rd fruits
+//specifify index where the new array starts(1) and ends(3)
+var citrus = fruits.slice(1, 3);
+
+//this does not alter the orginal fruits array
+//citrus contains ['banana', 'orange']
+//fruits contains ['banana', 'orange', 'lemon']
+
+//you can also use slice() to copy an entire array
+var nums = [1,2,3];
+var otherNums = nums.slice();
+//both arrays are [1,2,3]
+
+
+//Array Iterations
+	1.use a for loop to iterate over an array
+	2.use forEach to iterate over an array
+	3.compare and contrast for loop and forEach
+
+//To loop over an array using a for loop, we need to make use of the array's length property
+var colors = ["blue", "red", "yellow"];
+
+for(var i = 0; i < colors.length; i++) {
+	console.log(colors[i]);
+}
+
+//Foreach, javascript provides an easy built-in way of iterating over an array: forEach
+
+arr(array).forEach(someFunction)
+
+var colors = ["blue", "red", "yellow"];
+
+colors.forEach(function(color) {
+	//color is a placeholder, call it whatever you want
+	console.log(color);
+});
+
+//Excercise 
+
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+var colors = ["red","orange","yellow","green"];
+
+numbers.forEach(function(color){
+	if(color % 3 === 0){
+	console.log(color);
+	}
+});
+
+result = 3,6,9
+
+//Array problem set
+
+//*** print reverse ***
+function printReverse(arr){
+	for(var i = arr.length -1; i > 0; i--) {
+		console.log(arr[i]);
+	}
+}
+printReverse([3,4,2,5]);
+
+//*** isUniform() ***
+
+function isUniform(arr){
+	var first = arr[0];
+	for(var i = 1; i < arr.length; i++){
+	if(arr[i] !== first){
+		return false;
+		}
+	}
+	return true;
+}
+
+// *** sumArray() ***
+function sumArray(arr){
+	var total = 0;
+	arr.forEach(function(element){
+		total += element;
+	});
+	return total;
+}
+
+// *** max() ***
+function max(arr){
+	var max = arr[0];
+	for(var i = 1; i < arr.length; i++){
+	if(arr[i] > max){
+		max = arr[i];
+		}
+	}
+	return max;
+}
+
+
+
+
+
+
+
+

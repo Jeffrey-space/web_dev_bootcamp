@@ -1,0 +1,58 @@
+Link slides:
+http://webdev.slides.com/coltsteele/deck-4-47#/
+
+
+// Equality Operators
+
+== vs. ===
+
+var x = 99;
+
+x == "99"  //true
+
+x === "99" //false | note: use as much triple equal because that's more safe.
+
+
+var y = null;
+
+y == undefined //true
+
+y === undefined //false
+
+"==" performs type coercion, while "===" does not
+
+
+// few interesting cases
+
+true == "1"          //true
+
+0 == false           //true
+
+null == undefined    //true
+
+NaN == NaN           //false
+
+// Logical operators
+
+AND (&&) requires that both side are equal
+OR (||) requires one side to be true
+NOT (!) sets a statement to true or false
+
+// Exercise 2:
+const x = 3;
+const y = 8;
+
+!(x == "3" || x === y) && !(y != 8 && x <= y)
+false
+
+
+// Exercise 3:
+const str = "";
+const msg ="haha!";
+const isFunny = "false";
+
+!(( str || msg ) && isFunny)
+false
+
+
+

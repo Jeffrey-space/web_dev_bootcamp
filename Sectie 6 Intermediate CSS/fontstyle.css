@@ -1,0 +1,23 @@
+body {
+	background: gray;
+}
+h1 {
+	color: #FFFFFF;
+	font-size: 75px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-family: "roboto";
+}
+
+p {
+	color: #FFFFFF;
+	font-family: "roboto";
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: left;
+}
+
+span {
+	font-size: 1.5em;
+}
+

@@ -1,0 +1,21 @@
+DEMICAL - Base 10
+
+0,1,2,3,4,5,6,7,8,9
+
+BINARY - Base 2
+
+0,1
+
+HEXADECIMAL - Base 16
+
+0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+#_ _ _ _ _ _
+ RED, GREEN, BLUE
+
+ RGB
+ 3 channels: Red, Green, and blue
+
+ rgb (0,255,0)
+
+ RBGA: Alpha (transparency) channel. Ranges from 0.0 - 1.0

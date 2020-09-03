@@ -1,0 +1,48 @@
+//DOM events: making things interactive
+Events examples:
+Clicking on a button
+Hovering over a link
+Dragging and dropping
+Pressing the enter key
+
+// Syntax
+To add a listener, we use a method called addEventListener
+
+element.addEventListener(type, functionToCall);
+
+var button = document.querySelector("button");
+
+button.addEventListener("click", function() {
+	console.log("someone clicked the button!");
+});
+
+
+//example
+<button>click</button>
+<p>It is clicked</p>
+
+var button = document.querySelector("button");
+var paragraph = document.querySelector("p");
+
+button.addEventListener("click", function() {
+	paragraph.textContent = "someone clicked the button!"
+});
+
+
+//we could also rewrite it using a named function
+var button = document.querySelector("button");
+var paragraph = document.querySelector("p");
+
+button.addEventListener("click", changeText);
+
+function changeText() {
+	paragraph.textContent = "Someone clicked the button";
+}
+
+
+//Other types of events: Todo List
+Search for event references for more events you can use in addEventListener. 
+
+//console
+Searching for how many tr's there are on the page of MDN Event References
+document.querySelectorAll("tr").length - document.querySelectorAll("table").length

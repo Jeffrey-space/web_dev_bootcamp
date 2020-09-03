@@ -1,0 +1,14 @@
+
+	//There are new ways to store values
+	//prefer const over let
+	//prefer let over var
+	//USE var PRETTY MUCH NEVER
+	(you probably don't need it)
+
+	var ()
+
+	//blocked scoped
+	let ()
+	
+	//blocked scoped
+	const (the value can't be changed, has already been declared)
