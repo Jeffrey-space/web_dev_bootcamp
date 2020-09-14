@@ -7,25 +7,26 @@
 <body>
 	<div class="header">
 		<h1>THE GREAT</h1>
-		<h1>RGB(211, 206, 13)</h1>
+		<h1><span id="colorDisplay">RGB</span></h1>
 		<h1>GUESSING GAME</h1>
 		<div class="menu">
-			<ul class="menu-items">
-				<li>NEW COLORS</li>
+			<div class="menu-items">
+				<a href="#" class="button">NEW COLORS</a>
+				<span id="message"></span>
 				<div class="push">
-				 	<li>EASY</li>
-					<li>HARD</li>
+				 	<a href="#" class="button">EASY</a>
+					<a href="#" class="button">HARD</a>
 				</div>	
-			</ul>
+			</div>
 		</div>
 	</div>
-	<div class="colorbox">
-		<div class="box1"></div>
-		<div class="box2"></div>
-		<div class="box3"></div>
-		<div class="box4"></div>
-		<div class="box5"></div>
-		<div class="box6"></div>
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div> 
+		<div class="square"></div>
 	</div>
 </body>
 <script src="color_script.js"></script>
